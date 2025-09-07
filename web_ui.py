@@ -13,8 +13,8 @@ if 'chat_history' not in st.session_state:
 # Function to run AI chat with memory
 def run_chain(function):
     # Retrieve the chat history manually
-    chat_history_text = "\n".join([f"{msg['role']}: {msg['content']}" for msg in st.session_state.chat_history.messages])
-    
+    chat_history_text = "\n".join([f"{msg.type}: {msg.content}" for msg in st.session_state.chat_history.messages])
+
     # Define AI chat Prompt
     prompt = PromptTemplate(
         input_variables=["history", "question"],

@@ -48,3 +48,4 @@ basic-ai-agent/
 │── prompts/         # Example prompts for testing
 │── README.md        # Project documentation
 ```
+![alt text](image.png)
